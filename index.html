@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+             <title>bedrooms</title>
+			 <style>
+			 *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  font-family:cursive;
+  background-color:white;
+ 
+}
+
+
+
+
+ .navbar{
+    display:flex;
+    align-items: center;
+    padding:17px;
+	border-radius:15px 15px 15px 15px;
+	background-color:#F7A7EF;
+ }
+  nav{
+     flex:1;
+     text-align: right;
+	 border-radius:5px 5px 5px 5px;
+	 
+  }
+  nav ul{
+     display:inline-block;
+     list-style-type: none;
+	 border-radius:5px 5px 5px 5px;
+  }
+  nav ul li{
+     display:inline-block;
+     margin-right: 17px;
+	 border-radius:5px 5px 5px 5px;
+  }
+  nav ul li:hover{
+    background:skyblue;
+	border-radius:12px 12px 12px 12px;}
+  a{
+    text-decoration: none;
+    color:black;
+	border-radius:5px 5px 5px 5px;
+  }
+  p{
+    color:black;
+  }
+  .container{
+    max-width: 1400px;
+    margin:auto;
+    padding-left: 25px;
+    padding-right: 25px;
+	
+  }
+  .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+	
+  }
+  .col-2{
+    flex-basis: 50%;
+    min-width: 200px;
+	
+  }
+  .col-2 img{
+    max-width: 80%;
+    padding: 30px 0px;
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    width: 1000px;
+    height: 500px;
+	
+
+  }
+  .col-2 h1{
+     font-size: 50px;
+     line-height: 60px;
+     margin: 25px 0;
+  }
+  .btn{
+    display: inline-block;
+    background: red;
+    color: white;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+  }
+  .header{
+    background: radial-gradient(#fff,#ffd6d6);
+    height:2100px ;
+	border-radius:5px 5px 5px  5px;
+  }
+  .header .row{
+    margin-top: 70px;
+
+  }
+  .btn:hover{
+        background:hotpink;
+
+  }
+.categories{
+  margin: 70px 0;
+}
+.col-3{
+  flex: 30%;
+  min-width: 250px;
+  margin-bottom: 30px;
+  margin-left: 50px;
+}
+.col-3 img{
+  width: 100%;
+
+}
+.col-4{
+  flex-basis: 25%;
+  padding: 10px;
+  min-width: 150px;
+  margin-bottom: 50px;
+  transition: transform 0.5s ;
+  color: black;
+}
+.small-container{
+	margin-left:30px;
+}
+.col-4 img{
+  width: 80%;
+}
+.title{
+  text-align: center;
+  margin: 0 auto 80px;
+  position: relative;
+  line-height: 60px;
+  color: #555;
+}
+
+.col-2 .offer-img{
+   padding: 20px;
+}
+
+
+.title::after{
+      content: '';
+      background: black;
+      width: 80px;
+      height: 5px;
+      border-radius: 5px;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+	  border-radius:15px 15px 15px 15px;
+}
+h4{
+  color:#555;
+  font-weight: normal;
+}
+.col-4{
+  font-size: 15px;
+}
+.rating{
+  color:
+  #ff523b;
+}
+.col-4:hover{
+  transform:translateY(-5px);
+}
+small{
+  color:white;
+}
+.brands{
+  margin: 100px auto;
+}
+.col-5{
+  width: 160px;
+  }
+  .col-5 img{
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+  }
+  .col-5 img:hover{
+    filter:grayscale(0);
+  }
+
+  .footer{
+    background:#F39BEC;
+	height: 350px;
+    color: white;
+    font-size: 14px;
+    padding: 60px 0 20px;
+	border-radius:15px 15px 15px 15px;
+  }
+  .footer p{
+    color: black;
+  }
+  .footer h3{
+    color:black;
+    margin-bottom: 20px;
+  }
+  .footer-col-1,.footer-col-2,.footer-col-3,.footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+  }
+  .footer-col-1{
+    flex-basis: 30%;
+  }
+  .footer-col-2{
+    flex:1;
+    text-align: center;
+  }
+  .footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+  }
+  .footer-col-3,.footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+  }
+  ul{
+    list-style-type: none;
+  }
+  .app-logo{
+    margin-top: 20px;
+  }
+  .app-logo img{
+    width: 140px;
+  }
+  .footer hr{
+    border: none;
+    background:hotpink;
+    height: 2px;
+    margin: 20px;
+	border-radius:15px 15px 15px 15px;
+  }
+  .copyright{
+    text-align: center;
+  }
+  .menu-icon{
+    width: 28px;
+    margin-left: 20px;
+   }
+			 </style>
+      <!--<link rel="stylesheet" href="new.css"> -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+        </head>
+  <body>
+<div class="header">
+       <div class="container">
+        <div class="navbar">
+            <div class="logo">
+               <strong style="color:black">COMFORTZONE &#8482; </strong>
+            </div>
+              <nav>
+                 <ul>
+                    
+                        <li><a href="#"><strong style="color:black">Home</strong></a></li>
+                        <li><a href="#"><strong style="color:black">Trend Shop</strong></a></li>
+                        <li><a href="#"><strong style="color:black">Featured</strong></a></li>
+                        <li><a href="#"><strong style="color:black">Track Your Order</strong></a></li>
+                        <li><a href="#"><strong style="color:black">Shoping Cart</strong></a></li>
+                    
+                 </ul>
+
+              </nav> 
+              
+        </div>
+        <div class="row" style="background-color:white"></div>
+        <div class="col-2">
+            <h1 style="color:red">DESIGN <BR> BEDROOMS</h1>
+            <p style="color:balck">Get ready to transform<br> your bedroom into the ultimate refuge.<br> Create a space that's made just for<br> you with our tips for mastering your favorite design style.</p>
+                    <a href="" class="btn">DIFFERENT BEDROOMS &#8594; </a>
+        </div>
+        <div class="col-2">
+            <img src="main.jpg"></a>
+        </div>
+    </div>
+<br>
+<br>
+<br>
+
+  
+  <!------featured Categories------>
+    <div class="categories">
+        <div class="row">
+               
+    </div>
+<!-----featured product------>  
+ <div class="small-container">
+    <h2 class="title">SELECT AND SHOP</h2>
+    <div class="row">
+        <div class="col-4">
+            <a href=""><img src="1.jpg"></a>
+            <h4><a href="#">8 LUXURY BEDROOMS IN DETAIL</a><br>$80.00<br></h4>
+            
+        </div>
+        <div class="col-4">
+            <a href=""><img src="2.jpg"></a>
+            <h4> <a href="#">51 LUXURY BEDROOMS WITH IMAGES</a><br>$38.00<br></h4>
+            
+        </div>
+        <div class="col-4">
+            <a href=""><img src="3.jpg"></a>
+            <h4> <a href="">LUXURY MASTER BEDROOM DESIGN</a><br>$68.00 <br> </h4>
+            
+        </div>
+        <div class="col-4">
+            <a href=""><img src="4.jpg"></a>
+            <h4> <a href="">OPULENT BEDROOMS FROM CLASSIC</a><br> $82.00<br></h4>
+            
+        </div>
+        <div class="col-4">
+            <a href=""><img src="5.jpg"></a>
+            <h4> <a href="">BEAUTIFUL LUXURY BEDROOMS</a><br> $65.00<br> </h4>
+            
+        </div>
+        <div class="col-4">
+            <a href=""><img src="6.jpg"></a>
+            <h4> <a href="">8 LUXURY BEDROOMS IN DETAIL</a><br> $70.00<br> </h4>
+            
+        </div>
+        <div class="col-4">
+            <a href=""><img src="7.jpg"></a>
+            <h4><a href="">LUXURY BEDROOM  </a> <br>$70.00<br> </h4>
+           
+        </div>
+        <div class="col-4">
+            <a href=""><img src="8.jpg"></a>
+            <h4><a href=""> MOST LUXURIOUS BEDROOMS</a><br>$56.00 <br></h4>
+            
+        </div>
+        <div class="col-4">
+            <a href=""><img src="9.jpg"></a>
+            <h4><a href="">20 LUXURIOUS BEDROOM DESIGNS </a> <br> $75.00</h4>
+            
+        </div>
+        <div class="col-4">
+            <a href=""><img src="10.jpg"></a>
+            <h4><a href="">LUXURY BEDROOM AND ART</a><br> $80.00</h4>
+            
+        </div>
+        <div class="col-4">
+            <a href=""><img src="11.jpg"></a>
+            <h4><a href="">10 CONTEMPORARY LUXURY</a> <br> $85.00</h4>
+            
+        </div>
+        <div class="col-4">
+            <a href=""><img src="12.jpg"></a>
+            <h4><a href=""> 20 MODERN LUXURY BEDROOM DESIGNS</a><br> $90.00 </h4>
+            
+        </div>
+    </div>
+   
+  <div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3><a href="" style="color:black">Check Out</a></h3>
+                <p><a href="" style="color:black">
+                    Top 25 Design Style for a Dreamy Bedroom.</a></p>
+                    
+            </div>
+            <div class="footer-col-2">
+               <h3>Customer Care</h3>
+                <ul>
+                    <li><a href="" style="color:black">Order Status</a></li>
+                    <li><a href="" style="color:black">Contact Us</a></li>
+                    <li><a href="" style="color:black">Shipping/Returns</a></li>
+                    <li><a href="" style="color:black">Promotions/Exclusions</a></li>
+                </ul>
+            </div>
+            <div class="footer-col-3">
+               <h3>Corporate Info</h3>
+                <ul>
+                    <li><a href="" style="color:black">Store Locator</a></li>
+                    <li><a href="" style="color:black">About Us</a></li>
+                    <li><a href="" style="color:black">Covid-19</a></li>
+                    <li><a href="" style="color:black">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us
+                </h3>
+                 <ul>
+                     <li><a href="" style="color:black">Facebook</a></li>
+                     <li><a href="" style="color:black">Instagram</a></li>
+                     <li><a href="" style="color:black">Twitter</a></li>
+                     <li><a href="" style="color:black">Youtube</a></li>
+                 </ul>
+             </div>
+            
+        </div>
+        <hr>
+        <p class="copyright">BOOK NOW</p>
+    </div>
+  </div>
+</div>  
+</body>
+</html>
